@@ -11,9 +11,11 @@ var map1 = require('./maps-module.js')
 
 
 var total = 0
-map1.map1(arr, (value)=>{
+var result = map1.map1(arr, (value)=>{
      value = value * 4
      //console.log(total)
      return value
  })
+
+console.log(result)
 
