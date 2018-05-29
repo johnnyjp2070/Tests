@@ -5,5 +5,5 @@ module.exports.map1 = (arrray, callback)=>{
          var final = callback(arrray[i])
          mapped.push(final)
      }
-     console.log(mapped)
+     return mapped
 }
