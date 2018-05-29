@@ -4,23 +4,16 @@ var mapped = arr.map(function(value){
     value = value * 2
     return value
 })
-
+console.log("Text to check Async")
 console.log(mapped)
-
+var map1 = require('./maps-module.js')
 // map() from scratch
 
-function map1(arrray, callback){
-    var mapped = []
-     for(i = 0; i < arrray.length; i++){
-         //console.log(arrray[i])
-         var final = callback(arrray[i])
-         mapped.push(final)
-     }
-     console.log(mapped)
-}
+
 var total = 0
-map1(arr, (value)=>{
+map1.map1(arr, (value)=>{
      value = value * 4
      //console.log(total)
      return value
  })
+
